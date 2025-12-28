@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Structural Engineering - Your complete residential building project guide for 2025. Learn about structural systems, load analysis, building codes, and design guidelines.">
+    <meta name="keywords" content="structural engineering, residential buildings, building codes, load analysis, foundation design, structural systems">
+    <title>Master Structural Engineering - Complete Residential Building Guide 2025 | Design, Analysis & Safety</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        header {
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: #4a90e2;
+        }
+        
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 20px;
+            display: flex;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .breadcrumb a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 20px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #4a90e2;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        
+        .intro-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box strong {
+            color: #856404;
+        }
+        
+        .quick-nav {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .quick-nav h2 {
+            margin-top: 0;
+            border: none;
+            font-size: 1.5rem;
+        }
+        
+        .quick-nav ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 0.75rem;
+        }
+        
+        .quick-nav a {
+            color: #4a90e2;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .quick-nav a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        .info-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .info-box strong {
+            color: #1565c0;
+        }
+        
+        .tip-box {
+            background-color: #f1f8e9;
+            border-left: 4px solid #8bc34a;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .tip-box strong {
+            color: #558b2f;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #1a1a2e;
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        ul:not(.nav-menu):not(.quick-nav ul) {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        ul:not(.nav-menu):not(.quick-nav ul) li {
+            margin-bottom: 0.5rem;
+        }
+
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        ol li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .emoji {
+            font-style: normal;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: #fff;
+            border: none;
+            margin-top: 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #fff;
+            color: #667eea;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        footer {
+            background-color: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .nav-menu {
+                gap: 1rem;
+            }
+            
+            .quick-nav ul {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav>
+            <a href="/" class="logo">Master Structural Engineering</a>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/engineering-guide/">Engineering Guide</a></li>
+                <li><a href="/structural-systems/">Systems</a></li>
+                <li><a href="/load-analysis/">Load Analysis</a></li>
+                <li><a href="/building-codes/">Building Codes</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span>Master Structural Engineering Guide</span>
+    </div>
+    
+    <main id="main-content">
+        <h1>Master Structural Engineering: Your Complete Residential Building Project Guide for 2025</h1>
+        
+        <p class="intro-text"><strong>Welcome to Master Structural Engineering</strong>, the most comprehensive, code-compliant resource for understanding residential structural engineering in 2025. Whether you're a homeowner planning a renovation, a builder starting your first project, or a professional engineer seeking advanced technical knowledge about structural systems, load analysis, and design standards, you've found the right place.</p>
+        
+        <div class="warning-box">
+            <p><strong>⚠️ Important Professional & Legal Notice:</strong> The information provided on this website is for educational purposes only. Structural engineering requirements vary by location, and building codes continue to evolve. Always verify local building codes, obtain proper permits, consult licensed structural engineers before construction, and prioritize safety-first design practices. This content does not constitute professional engineering services or replace the need for licensed professionals. For professional structural engineering services and consultation, visit <a href="https://structuralengineer.us.com/" style="color: #856404; font-weight: bold;">StructuralEngineer.us.com</a>.</p>
+        </div>
+        
+        <div class="quick-nav">
+            <h2>📚 Quick Navigation</h2>
+            <ul>
+                <li><a href="#what-is-structural-engineering">What is Structural Engineering? Understanding the Foundation</a></li>
+                <li><a href="#why-master-structural">Why Choose Master Structural Engineering as Your Resource</a></li>
+                <li><a href="#structural-systems">Structural Systems Explained: Foundation to Roof</a></li>
+                <li><a href="#load-analysis">How Load Analysis Works: Dead, Live & Environmental</a></li>
+                <li><a href="#design-guidelines">Design Guidelines: Calculating Structural Requirements</a></li>
+                <li><a href="#safety-factors">Safety Considerations & Code Compliance</a></li>
+                <li><a href="#building-codes">Building Codes in 2025: What You Need to Know</a></li>
+                <li><a href="#material-selection">Material Selection: Choosing the Right Components</a></li>
+                <li><a href="#getting-started">Getting Started: A Homeowner's Roadmap</a></li>
+                <li><a href="#advanced-topics">Advanced Topics for Professional Engineers</a></li>
+                <li><a href="#faq">Frequently Asked Questions</a></li>
+            </ul>
+        </div>
+        
+        <h2 id="what-is-structural-engineering">What is Structural Engineering? Understanding the Foundation</h2>
+        
+        <p>Structural engineering is the specialized discipline of civil engineering focused on designing, analyzing, and ensuring the safety and stability of buildings and structures. For residential buildings, structural engineers apply principles of physics, mathematics, and material science to create homes that safely support all anticipated loads while meeting building code requirements.</p>
+        
+        <h3>Core Principles & Technical Foundation</h3>
+        
+        <p>Structural engineering for residential buildings relies on fundamental engineering principles including statics (equilibrium of forces), mechanics of materials (stress and strain analysis), and structural dynamics (response to dynamic loads). Engineers must ensure structures meet three critical criteria: <strong>strength</strong> (ability to resist loads without failure), <strong>serviceability</strong> (acceptable deflection and vibration under normal use), and <strong>stability</strong> (resistance to overturning, sliding, or collapse).</p>
+        
+        <div class="info-box">
+            <p><strong>🔬 Technical Insight:</strong> Modern residential structural design utilizes Load and Resistance Factor Design (LRFD) methodology, which applies statistical probability to load calculations and material strength. This approach, mandated by current building codes, provides more accurate safety factors than older working stress design methods. LRFD considers load combinations with factored loads (typically 1.2 times dead load plus 1.6 times live load) and reduced material strengths to ensure conservative designs.</p>
+        </div>
+        
+        <h3>Traditional & Modern Approaches</h3>
+        
+        <p>Historically, residential structures relied on empirical rules and traditional construction methods passed down through generations. Timber framing, masonry bearing walls, and simple span calculations served builders for centuries. Today, structural engineers employ sophisticated computer analysis, finite element modeling, and performance-based design to optimize structural systems while ensuring safety.</p>
+        
+        <p>Modern residential structural engineering integrates multiple disciplines:</p>
+        
+        <ul>
+            <li><strong>Foundation design</strong> - Analyzing soil conditions and designing appropriate foundation systems</li>
+            <li><strong>Floor systems</strong> - Designing joists, beams, and slabs for strength and deflection limits</li>
+            <li><strong>Wall systems</strong> - Load-bearing and lateral force-resisting walls</li>
+            <li><strong>Roof structures</strong> - Trusses, rafters, and structural roof systems</li>
+            <li><strong>Lateral systems</strong> - Shear walls, braced frames, and diaphragms for wind and seismic loads</li>
+            <li><strong>Connection design</strong> - Ensuring proper load transfer between structural elements</li>
+        </ul>
+        
+        <p>Contemporary residential projects increasingly incorporate advanced materials (engineered lumber, structural insulated panels, steel framing), sustainable design principles (optimized material use, embodied carbon reduction), and resilient design strategies (enhanced wind and seismic resistance). The integration of Building Information Modeling (BIM) enables precise 3D structural coordination with architectural and MEP systems.</p>
+        
+        <h2 id="why-master-structural">Why Choose Master Structural Engineering as Your Trusted Resource</h2>
+        
+        <p>In an industry where structural failures can have catastrophic consequences, and where building code requirements continuously evolve, Master Structural Engineering stands apart by providing:</p>
+        
+        <h3>✅ Code-Compliant Information</h3>
+        
+        <p>Every design principle we present aligns with current International Residential Code (IRC), International Building Code (IBC), and ASCE 7 standards. We reference specific code sections, design standards, and engineering best practices to ensure accuracy and compliance.</p>
+        
+        <h3>✅ Comprehensive System Guides</h3>
+        
+        <p>Our detailed structural system database covers foundation types, floor framing systems, wall construction methods, roof structures, and lateral force-resisting systems with in-depth profiles including load capacities, span tables, connection details, code requirements, and design examples.</p>
+        
+        <h3>✅ Honest Safety & Risk Information</h3>
+        
+        <p>We don't minimize the importance of proper structural design. Responsible construction requires understanding both load requirements and failure mechanisms. We address common errors, design pitfalls, and safety-critical details that must never be compromised.</p>
+        
+        <h3>✅ Up-to-Date Code Information</h3>
+        
+        <p>Building codes evolve continuously. We maintain current information on IRC and IBC editions, state amendments, local code adoptions, and pending code changes to keep you informed of the latest requirements.</p>
+        
+        <h3>✅ No Commercial Bias</h3>
+        
+        <p>Master Structural Engineering is an educational resource, not a contractor marketing platform. We don't promote specific products or contractors, so our information remains objective and focused on your education and safety rather than sales.</p>
+        
+        <h3>✅ Homeowner-Friendly & Engineer-Level Content</h3>
+        
+        <p>Whether you're a homeowner trying to understand your project requirements or a licensed engineer optimizing a complex design, our content scales to your knowledge level with clear explanations, advanced calculations, and everything in between.</p>
+        
+        <h2 id="structural-systems">Structural Systems Explained: Foundation to Roof</h2>
+        
+        <p>Understanding residential structural systems is fundamental to successful building projects. Systems are categorized by their function: <strong>vertical load support</strong> (carrying gravity loads downward) and <strong>lateral load resistance</strong> (resisting horizontal wind and seismic forces). Each system must work together as an integrated structural framework.</p>
+        
+        <h3>Foundation Systems</h3>
+        
+        <h4>🏗️ Shallow Foundations</h4>
+        
+        <p><strong>Primary Function:</strong> Transfer building loads to near-surface soils</p>
+        
+        <p><strong>Soil Requirements:</strong> Adequate bearing capacity (typically 1,500-4,000 psf)</p>
+        
+        <p><strong>Design Considerations:</strong> Frost depth, soil bearing capacity, settlement control</p>
+        
+        <p><strong>Common Types:</strong> Strip footings, spread footings, mat foundations, frost-protected shallow foundations</p>
+        
+        <h4>🏗️ Deep Foundations</h4>
+        
+        <p><strong>Primary Function:</strong> Transfer loads to deeper, more competent soil or rock layers</p>
+        
+        <p><strong>Soil Requirements:</strong> Poor near-surface soils, high water table, large loads</p>
+        
+        <p><strong>Design Considerations:</strong> Pile capacity, settlement, lateral resistance</p>
+        
+        <p><strong>Common Types:</strong> Driven piles, drilled shafts, helical piles, micropiles</p>
+        
+        <h4>🏗️ Basement & Crawlspace Walls</h4>
+        
+        <p><strong>Primary Function:</strong> Retain soil while supporting vertical loads</p>
+        
+        <p><strong>Design Requirements:</strong> Lateral earth pressure resistance, moisture control</p>
+        
+        <p><strong>Design Considerations:</strong> Wall thickness, reinforcement, waterproofing, drainage</p>
+        
+        <p><strong>Common Types:</strong> Concrete foundation walls, concrete block walls, permanent wood foundations (PWF)</p>
+        
+        <h3>Floor Systems</h3>
+        
+        <h4>🏠 Wood Floor Framing</h4>
+        
+        <p><strong>Primary Function:</strong> Support occupancy loads and transfer to bearing walls</p>
+        
+        <p><strong>Load Capacity:</strong> Typically 40-50 psf live load, 10-20 psf dead load</p>
+        
+        <p><strong>Span Capabilities:</strong> 8-20 feet depending on joist size and spacing</p>
+        
+        <p><strong>Common Types:</strong> Dimensional lumber joists (2x8, 2x10, 2x12), engineered I-joists, floor trusses, glulam beams</p>
+        
+        <h4>🏠 Concrete Floor Systems</h4>
+        
+        <p><strong>Primary Function:</strong> Provide solid, durable floor platform</p>
+        
+        <p><strong>Load Capacity:</strong> 50-150 psf depending on thickness and reinforcement</p>
+        
+        <p><strong>Typical Thickness:</strong> 4-6 inches for slabs-on-grade, 6-10 inches for suspended slabs</p>
+        
+        <p><strong>Common Types:</strong> Slabs-on-grade, suspended slabs, post-tensioned slabs, precast planks</p>
+        
+        <h4>🏠 Steel Floor Framing</h4>
+        
+        <p><strong>Primary Function:</strong> Long-span, high-capacity floor systems</p>
+        
+        <p><strong>Load Capacity:</strong> 50-200+ psf depending on member size</p>
+        
+        <p><strong>Span Capabilities:</strong> 15-40+ feet with engineered steel joists and beams</p>
+        
+        <p><strong>Common Types:</strong> Steel joists, wide-flange beams, steel decking with concrete topping</p>
+        
+        <h3>Wall Systems</h3>
+        
+        <h4>🧱 Load-Bearing Walls</h4>
+        
+        <p><strong>Primary Function:</strong> Support vertical loads from floors and roof above</p>
+        
+        <p><strong>Design Requirement:</strong> Adequate compressive capacity, proper bearing connections</p>
+        
+        <p><strong>Typical Construction:</strong> Wood studs (2x4 or 2x6), steel studs, concrete block, structural insulated panels (SIPs)</p>
+        
+        <h4>🧱 Shear Walls</h4>
+        
+        <p><strong>Primary Function:</strong> Resist lateral loads from wind and seismic forces</p>
+        
+        <p><strong>Design Requirement:</strong> Shear capacity, hold-down connections, aspect ratio limits</p>
+        
+        <p><strong>Typical Construction:</strong> Wood structural panels (OSB/plywood) on wood framing, concrete/masonry walls, steel-braced frames</p>
+        
+        <h4>🧱 Partition Walls</h4>
+        
+        <p><strong>Primary Function:</strong> Space division without structural load support</p>
+        
+        <p><strong>Design Requirement:</strong> Self-weight support only, deflection compatibility</p>
+        
+        <p><strong>Typical Construction:</strong> Wood or steel framing with drywall, demountable partitions</p>
+        
+        <h3>Roof Systems</h3>
+        
+        <h4>🏠 Roof Trusses</h4>
+        
+        <p><strong>Primary Function:</strong> Efficient long-span roof structure</p>
+        
+        <p><strong>Span Capabilities:</strong> 20-60+ feet clear span</p>
+        
+        <p><strong>Load Capacity:</strong> Designed for specific snow, dead, and wind loads</p>
+        
+        <p><strong>Common Types:</strong> Fink trusses, king post, scissors trusses, attic trusses, mono trusses</p>
+        
+        <h4>🏠 Rafter Framing</h4>
+        
+        <p><strong>Primary Function:</strong> Traditional sloped roof construction</p>
+        
+        <p><strong>Span Capabilities:</strong> 10-20 feet typical</p>
+        
+        <p><strong>Load Capacity:</strong> Per code-prescribed loads, typically 20-40 psf snow + 15 psf dead</p>
+        
+        <p><strong>Common Types:</strong> Dimensional lumber rafters, engineered lumber rafters, ridge beams</p>
+        
+        <h4>🏠 Structural Roof Panels</h4>
+        
+        <p><strong>Primary Function:</strong> Combined sheathing and structural support</p>
+        
+        <p><strong>Span Capabilities:</strong> 4-8 feet between supports</p>
+        
+        <p><strong>Load Capacity:</strong> Varies by panel type and thickness</p>
+        
+        <p><strong>Common Types:</strong> Structural insulated panels (SIPs), stressed-skin panels, panelized roof systems</p>
+        
+        <div class="tip-box">
+            <p><strong>💡 Pro Tip:</strong> Successful structural design requires coordination of all systems. Foundation design depends on superstructure loads; floor systems must align with wall layouts; roof loads transfer through walls to foundations. Professional engineers analyze the complete load path from roof to foundation, ensuring every connection and member meets code requirements. Learn more in our comprehensive <a href="/engineering-guide/" style="color: #558b2f; font-weight: bold;">engineering guide</a>.</p>
+        </div>
+        
+        <h2 id="load-analysis">How Load Analysis Works: Dead, Live & Environmental Loads</h2>
+        
+        <p>Structural load analysis forms the foundation of safe building design. Engineers must identify, calculate, and combine all loads a structure will experience throughout its service life. Building codes prescribe minimum load values, but site-specific conditions may require higher values.</p>
+        
+        <h3>Dead Loads (D)</h3>
+        
+        <p>Dead loads are permanent, gravity loads from the structure's own weight. These loads are constant and predictable, but must be accurately calculated.</p>
+        
+        <p><strong>Common Dead Load Components:</strong></p>
+        
+        <ul>
+            <li>Structural framing (wood, steel, concrete members)</li>
+            <li>Floor and roof sheathing (plywood, OSB, structural panels)</li>
+            <li>Roofing materials (asphalt shingles, tile, metal roofing)</li>
+            <li>Ceiling finishes (drywall, plaster, suspended ceilings)</li>
+            <li>Floor finishes (hardwood, tile, carpet, concrete topping)</li>
+            <li>Insulation and interior partitions</li>
+            <li>Mechanical equipment, ductwork, piping</li>
+        </ul>
+        
+        <p><strong>Typical Dead Load Values:</strong></p>
+        
+        <ul>
+            <li>Wood floor framing: 10-15 psf</li>
+            <li>Concrete slabs: 50-150 psf (depending on thickness)</li>
+            <li>Asphalt shingle roofing: 2-4 psf</li>
+            <li>Tile roofing: 8-15 psf</li>
+            <li>Gypsum wallboard (5/8"): 2.5 psf</li>
+        </ul>
+        
+        <h3>Live Loads (L)</h3>
+        
+        <p>Live loads are transient, movable loads from occupancy and use. Building codes specify minimum live loads based on occupancy type.</p>
+        
+        <p><strong>IRC Minimum Live Loads:</strong></p>
+        
+        <ul>
+            <li>Residential floors: 40 psf</li>
+            <li>Residential decks: 40 psf (60 psf with guardrails)</li>
+            <li>Sleeping rooms: 30 psf</li>
+            <li>Stairs and exits: 40 psf (100 psf concentrated load)</li>
+            <li>Balconies: 60 psf (100 psf for one and two-family)</li>
+            <li>Guardrail loads: 200 lb concentrated or 50 plf uniform</li>
+        </ul>
+        
+        <p><strong>Live Load Reduction:</strong> For large floor areas supporting multiple stories, codes permit live load reduction using specific formulas. This recognizes that not all areas will be fully loaded simultaneously.</p>
+        
+        <h3>Snow Loads (S)</h3>
+        
+        <p>Snow loads vary significantly by geographic location, roof slope, and exposure. ASCE 7 provides ground snow load maps and calculation procedures.</p>
+        
+        <p><strong>Calculation Process:</strong></p>
+        
+        <ol>
+            <li>Determine ground snow load (pg) from ASCE 7 maps or local authority</li>
+            <li>Calculate flat roof snow load: pf = 0.7 × Ce × Ct × Is × pg</li>
+            <li>Apply slope reduction for sloped roofs (typically 1 psf per degree slope)</li>
+            <li>Consider drift loads at roof projections, valleys, and step changes</li>
+            <li>Analyze unbalanced snow loads on asymmetric roofs</li>
+        </ol>
+        
+        <p><strong>Key Factors:</strong></p>
+        
+        <ul>
+            <li>Ce = Exposure factor (0.7 to 1.2 based on terrain and wind exposure)</li>
+            <li>Ct = Thermal factor (1.0 for heated buildings, 1.1-1.2 for unheated)</li>
+            <li>Is = Importance factor (1.0 for residential, higher for essential facilities)</li>
+        </ul>
+        
+        <h3>Wind Loads (W)</h3>
+        
+        <p>Wind loads create both positive pressures (pushing) and negative pressures (suction) on building surfaces. Analysis requires determining design wind speed, exposure category, and building geometry.</p>
+        
+        <p><strong>Design Wind Speed:</strong> ASCE 7 provides wind speed maps based on 700-year return period (ultimate design). Values range from 90 mph in interior regions to 180+ mph in coastal hurricane zones.</p>
+        
+        <p><strong>Exposure Categories:</strong></p>
+        
+        <ul>
+            <li>Exposure B: Urban/suburban terrain with numerous obstructions</li>
+            <li>Exposure C: Open terrain with scattered obstructions (most common)</li>
+            <li>Exposure D: Flat, unobstructed coastal areas</li>
+        </ul>
+        
+        <p><strong>Wind Pressure Calculation:</strong> Engineers use velocity pressure (qz) combined with pressure coefficients (GCp) to determine design pressures on walls, roofs, and components.</p>
+        
+        <h3>Seismic Loads (E)</h3>
+        
+        <p>Seismic loads result from ground motion during earthquakes. Design requirements depend on Seismic Design Category (SDC) determined from ground motion parameters and building importance.</p>
+        
+        <p><strong>Seismic Design Categories:</strong></p>
+        
+        <ul>
+            <li>SDC A: Minimal seismic risk, no special detailing required</li>
+            <li>SDC B-C
